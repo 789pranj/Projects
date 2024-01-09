@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    background-color: rgb(81, 81, 96);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.base figure {
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background:#fff;
+    border-radius: 4px;
+}
+
+.base figure img{
+    width: 100%;
+    display: block;
+    transition: all .5s ease;
+    border-radius: 4px;
+}
+
+.base figure figcaption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    
+}
+
+.base figure.hov1 figcaption{transform: translate(150%, -50%) rotate(360deg)}
+.base figure.hov2 figcaption{transform: translate(-250%, -50%) rotate(-360deg)}
+.base figure:hover figcaption{transform: translate(-50%, -50%)}
+
+
