@@ -1,42 +1,92 @@
-/* *{
-    background-color:black;
-} */
-  
-h1{
-    background: linear-gradient(90deg, #00ffff, #ff00c3);
-    width: 50%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+body {
+    background-color: #0c2042; /* Dark blue background */
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #13294b; /* Darker blue container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
     text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
 }
 
-.inner .tab{
-    float: left;
-    padding-left: 15%;
+.calculator {
+    margin-top: 20px;
 }
 
-.bt{
-    padding: 5px;
-    width: 50px;
-    border: 2px solid #ff00c3;
-    border-radius: 50px;
-    margin: 10px;
-    background: #00ffff;
-    font-size: 20px;
-}
-
-.display{
-    height: 30px;
-    margin-bottom: 5px;
-    font-size: 25px;
-    width: 270px;
+.display {
+    width: 95%;
     height: 50px;
-    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
     text-align: right;
-    font-size: 30px;
-    font-weight: bold;
+    border: 2px solid #1f3c6d;
+    border-radius: 5px;
+    background: #1f3c6d;
+    color: white;
+}
 
+.bt {
+    width: 23%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid #4077b6;
+    border-radius: 10px;
+    background: #3282b8;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.bt:hover {
+    background: #146cba; 
+    border-color: #146cba; 
+    color: white;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bt {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bt {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bt {
+        width: 45%;
+    }
+
+    .display {
+        font-size: 20px;
+    }
 }
