@@ -7,55 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="inner">
-    <div>
-        <h1>
-            Basic Calcularor
-        </h1>
+<div class="container">
+    <div class="header">
+        <h1>Calculator</h1>
     </div>
-    <div class="tab" style="background-color: transparent;">
-        <table>
-            <tr>
-                <input class="display" type="text" name="display" id="display">
-                <p id="error" class="error"></p>
-            </tr>
-            <br>
-            <tr>
+    <div class="calculator">
+        <input class="display" type="text" id="display" >
+        <p id="error" class="error"></p>
+        <div class="buttons">
             <button class="bt" onclick="Clear()">C</button>
             <button class="bt" onclick="solve('%')">%</button>
             <button class="bt" onclick="backspace()"><-</button>
             <button class="bt" onclick="solve('/')">/</button>
-            </tr>
-            <br>
-            <tr>
+        <br>
             <button class="bt" onclick="solve('7')">7</button>
             <button class="bt" onclick="solve('8')">8</button>
             <button class="bt" onclick="solve('9')">9</button>
-            <button class="bt" onclick="solve('*')">*</button>
-            </tr>
-            <br>
-            <tr>
+            <button class="bt" onclick="solve('*')">*</button>    
+        <br>
             <button class="bt" onclick="solve('4')">4</button>
             <button class="bt" onclick="solve('5')">5</button>
             <button class="bt" onclick="solve('6')">6</button>
             <button class="bt" onclick="solve('-')">-</button>
-            </tr>
-            <br>
-            <tr>
+        <br>
             <button class="bt" onclick="solve('1')">1</button>
             <button class="bt" onclick="solve('2')">2</button>
             <button class="bt" onclick="solve('3')">3</button>
             <button class="bt" onclick="solve('+')">+</button>
-            </tr>
-            <br>
-            <tr>
+        <br>
             <button class="bt" onclick="solve('00')">00</button>
             <button class="bt" onclick="solve('0')">0</button>
             <button class="bt" onclick="solve('.')">.</button>
             <button class="bt" onclick="result('=')">=</button>
-            </tr>
-            <br>
-        </table>
+        </div>
     </div>
 </div>
 <script src="script.js"></script>
